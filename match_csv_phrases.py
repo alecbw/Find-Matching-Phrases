@@ -4,6 +4,9 @@ import re
 import logging
 
 
+############################################################################################################
+
+
 def read_input_csv(filename, **kwargs):
     filename = filename + ".csv" if ".csv" not in filename else filename
 
@@ -56,12 +59,12 @@ if __name__ == "__main__":
 
     csv.field_size_limit(100000000)
 
-    data_filename = "Combined Post Data 8.22.csv"
+    data_filename = "Example_Text_Data.csv"
     data_text_col = "text"
     start_row = 11000
 
-    phrases_filename = "SS_Tag_Products_With_Cats_8.22.csv"
-    phrases_col = "product"
+    phrases_filename = "Classifier_Phrases.csv"
+    phrases_col = "Snippets"
     phrases_category_col = "Unique tags"
 
     input_lod = read_input_csv(
